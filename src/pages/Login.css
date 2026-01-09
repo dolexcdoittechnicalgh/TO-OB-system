@@ -1,0 +1,118 @@
+/* FONT:POPPINS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* no unexpected spacing */
+}
+
+/* Remove all extra margins & padding on the page */
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* disable scrolling */
+}
+
+/* bg full cover the screen */
+.login-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* semitransparent form */
+.login-form {
+  background-color: rgba(30, 30, 30, 0.6);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  width: 600px !important; /* Force smaller width */
+  max-width: 600px !important; /* Ensure it never grows */
+  text-align: center;
+}
+
+/* restore button and text field spacing */
+.text-field {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.login-button {
+  border-radius: 12px;
+  color: #ffffff;
+  text-transform: none;
+  display: "flex";
+}
+
+/* logo spacing */
+.login-logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+/* title spacing */
+.login-title {
+  font-size: 16px;
+  font-weight: normal;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+/* (to/ob system) */
+.login-subtitle {
+  font-size: 16px;
+  font-weight: normal;
+  color: #ffffff;
+  margin-bottom: 30px !important; /* adjust this value as needed */
+}
+
+.login-bold-text {
+  font-size: 16px;
+  font-weight: bold !important;
+  color: #ffffff;
+  margin: 10px !important;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .login-form {
+    width: 90% !important; /* Adjust form width on smaller screens */
+    padding: 20px;
+  }
+
+  .login-logo {
+    width: 80px; /* Adjust logo size */
+  }
+
+  .login-title,
+  .login-subtitle,
+  .login-bold-text {
+    font-size: 14px; /* Adjust text size */
+  }
+}
+
+@media (max-width: 480px) {
+  .login-form {
+    width: 95% !important; /* Further adjust form width */
+  }
+
+  /* Further adjustments for very small screens */
+  .login-title,
+  .login-subtitle,
+  .login-bold-text {
+    font-size: 12px;
+  }
+}
